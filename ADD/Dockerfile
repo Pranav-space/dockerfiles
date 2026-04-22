@@ -3,4 +3,5 @@ RUN dnf install nginx -y
 RUN rm -rf /usr/share/nginx/html/index.html
 ADD https://raw.githubusercontent.com/Pranav-space/dockerfiles/refs/heads/main/README.md /usr/share/nginx/html/index.html
 RUN chmod +r /usr/share/nginx/html/index.html
+ADD TextFile.tar /tmp/
 CMD ["nginx","-g","daemon off;"]
