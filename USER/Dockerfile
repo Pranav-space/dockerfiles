@@ -1,5 +1,5 @@
 FROM almalinux:9
-RUN sudo dnf install vim -y
+RUN dnf install vim -y
 RUN useradd curious
 
 USER curious
